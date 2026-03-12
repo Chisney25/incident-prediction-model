@@ -16,4 +16,4 @@ The model achieved **100% precision** for incident prediction, meaning it genera
 To move this to production (e.g., in a JetBrains environment):
 1. **Data Source:** Replace the synthetic CSV with a live feed from **Prometheus** or **Grafana**.
 2. **Deployment:** Wrap the `incident_model.pkl` in a Flask or FastAPI microservice.
-3. **Action:** If the model predicts an incident (1), trigger a webhook to PagerDuty or Slack.
+3. **Action:** If the model predicts an incident (1), trigger a webhook to PagerDuty, Discord or Slack.
